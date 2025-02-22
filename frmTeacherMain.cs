@@ -22,7 +22,22 @@ namespace SchoolProject
 
         private void frmTeacherMain_Load(object sender, EventArgs e)
         {
-            lblUsername.Text = _username;
+            using (var context = new DbSchoolProjectEntities1())
+            {
+                var teacher = context.TblTeacher.FirstOrDefault(u => u.Username == _username);
+
+                if (teacher != null)
+                {
+                    lblFullName.Text = teacher.Name + " " + teacher.Surname;
+                    lblEmail.Text = teacher.Email;
+                    lblPhoneNumber.Text = teacher.PhoneNumber;
+                    lblTitle.Text = teacher.Title;
+                }
+                else
+                {
+                    MessageBox.Show("Kayıt bilgileri yüklenirken bir hata oluştu!");
+                }
+            }
         }
     }
 }

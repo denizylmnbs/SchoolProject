@@ -22,7 +22,21 @@ namespace SchoolProject
 
         private void frmRegistrarMain_Load(object sender, EventArgs e)
         {
-            lblUsername.Text = _username;
+            using(var context = new DbSchoolProjectEntities1())
+            {
+                var registrar = context.TblRegistrar.First(u => u.Username == _username);
+
+                if (registrar != null)
+                {
+                    lblFullName.Text = registrar.Name + " " + registrar.Surname;
+                    lblEmail.Text = registrar.Email;
+                    lblPhoneNumber.Text = registrar.PhoneNumber;
+                }
+                else
+                {
+                    MessageBox.Show("Kayıt bilgileri yüklenirken bir hata oluştu!");
+                }
+            }
 
         }
     }

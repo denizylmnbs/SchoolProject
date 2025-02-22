@@ -32,7 +32,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblFullName = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +45,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -74,7 +77,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblUsername);
+            this.groupBox1.Controls.Add(this.lblPhoneNumber);
+            this.groupBox1.Controls.Add(this.lblEmail);
+            this.groupBox1.Controls.Add(this.lblTitle);
+            this.groupBox1.Controls.Add(this.lblFullName);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
@@ -86,14 +92,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Akademik Üye Bilgileri";
             // 
-            // lblUsername
+            // lblFullName
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(206, 39);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(43, 21);
-            this.lblUsername.TabIndex = 8;
-            this.lblUsername.Text = "label";
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Location = new System.Drawing.Point(96, 39);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(43, 21);
+            this.lblFullName.TabIndex = 8;
+            this.lblFullName.Text = "label";
             // 
             // label5
             // 
@@ -209,6 +215,33 @@
             this.button2.Text = "Not Girişi";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(70, 69);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(43, 21);
+            this.lblTitle.TabIndex = 9;
+            this.lblTitle.Text = "label";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(67, 98);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(43, 21);
+            this.lblEmail.TabIndex = 10;
+            this.lblEmail.Text = "label";
+            // 
+            // lblPhoneNumber
+            // 
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(148, 129);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(43, 21);
+            this.lblPhoneNumber.TabIndex = 11;
+            this.lblPhoneNumber.Text = "label";
+            // 
             // frmTeacherMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -255,6 +288,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

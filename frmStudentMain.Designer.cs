@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudentMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblFullName = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.lblStudentPhoneNumber = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,7 +48,10 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblDepartment = new System.Windows.Forms.Label();
+            this.lblGrade = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -60,7 +64,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblUsername);
+            this.groupBox1.Controls.Add(this.lblPhoneNumber);
+            this.groupBox1.Controls.Add(this.lblEmail);
+            this.groupBox1.Controls.Add(this.lblGrade);
+            this.groupBox1.Controls.Add(this.lblDepartment);
+            this.groupBox1.Controls.Add(this.lblFullName);
             this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.lblStudentPhoneNumber);
             this.groupBox1.Controls.Add(this.label5);
@@ -75,6 +83,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Öğrenci Bilgileri";
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Location = new System.Drawing.Point(96, 25);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(52, 21);
+            this.lblFullName.TabIndex = 9;
+            this.lblFullName.Text = "label7";
             // 
             // btnUpdate
             // 
@@ -233,14 +250,41 @@
             this.dataGridView3.Size = new System.Drawing.Size(528, 364);
             this.dataGridView3.TabIndex = 0;
             // 
-            // lblUsername
+            // lblDepartment
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(206, 25);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(52, 21);
-            this.lblUsername.TabIndex = 9;
-            this.lblUsername.Text = "label7";
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.Location = new System.Drawing.Point(70, 55);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(43, 21);
+            this.lblDepartment.TabIndex = 10;
+            this.lblDepartment.Text = "label";
+            // 
+            // lblGrade
+            // 
+            this.lblGrade.AutoSize = true;
+            this.lblGrade.Location = new System.Drawing.Point(131, 86);
+            this.lblGrade.Name = "lblGrade";
+            this.lblGrade.Size = new System.Drawing.Size(43, 21);
+            this.lblGrade.TabIndex = 11;
+            this.lblGrade.Text = "label";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(67, 117);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(43, 21);
+            this.lblEmail.TabIndex = 12;
+            this.lblEmail.Text = "label";
+            // 
+            // lblPhoneNumber
+            // 
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(148, 148);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(43, 21);
+            this.lblPhoneNumber.TabIndex = 13;
+            this.lblPhoneNumber.Text = "label";
             // 
             // frmStudentMain
             // 
@@ -295,6 +339,10 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblGrade;
+        private System.Windows.Forms.Label lblDepartment;
     }
 }
