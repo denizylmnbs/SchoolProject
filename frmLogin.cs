@@ -19,7 +19,40 @@ namespace SchoolProject
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
 
+            using (var context = new DbSchoolProjectEntities1())
+            {
+                var user = context.TblAccount.FirstOrDefault(u => u.Username == username && u.Password == password);
+
+                if (user != null)
+                {
+                    MessageBox.Show("Giriş başarılı!");
+                    if (user.AccountType == "Student")
+                    {
+                        frmStudentMain frm = new frmStudentMain();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    if (user.AccountType == "Teacher")
+                    {
+                        frmTeacherMain frm = new frmTeacherMain();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    if (user.AccountType == "Registrar")
+                    {
+                        frmRegistrarMain frm = new frmRegistrarMain();
+                        frm.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı adı veya şifre hatalı!");
+                }
+            }
         }
     }
 }
