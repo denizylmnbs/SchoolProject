@@ -39,5 +39,11 @@ namespace SchoolProject
                 }
             }
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmTeacherInfoUpdate fr = new frmTeacherInfoUpdate(_username);
+            fr.ShowDialog();
+        }
     }
 }

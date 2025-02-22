@@ -13,7 +13,7 @@ namespace SchoolProject
     public partial class frmStudentMain : Form
     {
 
-        private string _username;
+        public string _username;
 
         public frmStudentMain(string username)
         {
@@ -43,6 +43,12 @@ namespace SchoolProject
                 }
             }
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmStudentInformationUpdate fr = new frmStudentInformationUpdate(_username);
+            fr.ShowDialog();
         }
     }
 }

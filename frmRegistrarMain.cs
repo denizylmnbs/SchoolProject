@@ -13,7 +13,7 @@ namespace SchoolProject
     public partial class frmRegistrarMain: Form
     {
 
-        private string _username;
+        public string _username;
         public frmRegistrarMain(string username)
         {
             InitializeComponent();
@@ -38,6 +38,12 @@ namespace SchoolProject
                 }
             }
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmRegistrarInformationUpdate fr = new frmRegistrarInformationUpdate(_username);
+            fr.ShowDialog();
         }
     }
 }

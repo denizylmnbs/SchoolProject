@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudentMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblGrade = new System.Windows.Forms.Label();
+            this.lblDepartment = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.lblStudentPhoneNumber = new System.Windows.Forms.Label();
@@ -48,10 +52,6 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.lblDepartment = new System.Windows.Forms.Label();
-            this.lblGrade = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -84,6 +84,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Öğrenci Bilgileri";
             // 
+            // lblPhoneNumber
+            // 
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(148, 148);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(43, 21);
+            this.lblPhoneNumber.TabIndex = 13;
+            this.lblPhoneNumber.Text = "label";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(67, 117);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(43, 21);
+            this.lblEmail.TabIndex = 12;
+            this.lblEmail.Text = "label";
+            // 
+            // lblGrade
+            // 
+            this.lblGrade.AutoSize = true;
+            this.lblGrade.Location = new System.Drawing.Point(131, 86);
+            this.lblGrade.Name = "lblGrade";
+            this.lblGrade.Size = new System.Drawing.Size(43, 21);
+            this.lblGrade.TabIndex = 11;
+            this.lblGrade.Text = "label";
+            // 
+            // lblDepartment
+            // 
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.Location = new System.Drawing.Point(70, 55);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(43, 21);
+            this.lblDepartment.TabIndex = 10;
+            this.lblDepartment.Text = "label";
+            // 
             // lblFullName
             // 
             this.lblFullName.AutoSize = true;
@@ -102,6 +138,7 @@
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Bilgilerimi Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lblStudentPhoneNumber
             // 
@@ -249,42 +286,6 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(528, 364);
             this.dataGridView3.TabIndex = 0;
-            // 
-            // lblDepartment
-            // 
-            this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Location = new System.Drawing.Point(70, 55);
-            this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(43, 21);
-            this.lblDepartment.TabIndex = 10;
-            this.lblDepartment.Text = "label";
-            // 
-            // lblGrade
-            // 
-            this.lblGrade.AutoSize = true;
-            this.lblGrade.Location = new System.Drawing.Point(131, 86);
-            this.lblGrade.Name = "lblGrade";
-            this.lblGrade.Size = new System.Drawing.Size(43, 21);
-            this.lblGrade.TabIndex = 11;
-            this.lblGrade.Text = "label";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(67, 117);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(43, 21);
-            this.lblEmail.TabIndex = 12;
-            this.lblEmail.Text = "label";
-            // 
-            // lblPhoneNumber
-            // 
-            this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(148, 148);
-            this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(43, 21);
-            this.lblPhoneNumber.TabIndex = 13;
-            this.lblPhoneNumber.Text = "label";
             // 
             // frmStudentMain
             // 
