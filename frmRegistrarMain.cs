@@ -12,9 +12,18 @@ namespace SchoolProject
 {
     public partial class frmRegistrarMain: Form
     {
-        public frmRegistrarMain()
+
+        private string _username;
+        public frmRegistrarMain(string username)
         {
             InitializeComponent();
+            _username = username;
+        }
+
+        private void frmRegistrarMain_Load(object sender, EventArgs e)
+        {
+            lblUsername.Text = _username;
+
         }
     }
 }

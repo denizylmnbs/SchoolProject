@@ -31,19 +31,19 @@ namespace SchoolProject
                     MessageBox.Show("Giriş başarılı!");
                     if (user.AccountType == "Student")
                     {
-                        frmStudentMain frm = new frmStudentMain();
+                        frmStudentMain frm = new frmStudentMain(user.Username);
                         frm.Show();
                         this.Hide();
                     }
                     if (user.AccountType == "Teacher")
                     {
-                        frmTeacherMain frm = new frmTeacherMain();
+                        frmTeacherMain frm = new frmTeacherMain(user.Username);
                         frm.Show();
                         this.Hide();
                     }
                     if (user.AccountType == "Registrar")
                     {
-                        frmRegistrarMain frm = new frmRegistrarMain();
+                        frmRegistrarMain frm = new frmRegistrarMain(user.Username);
                         frm.Show();
                         this.Hide();
                     }

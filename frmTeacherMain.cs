@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace SchoolProject
 {
+    
     public partial class frmTeacherMain: Form
     {
-        public frmTeacherMain()
+        private string _username;
+        public frmTeacherMain(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         private void frmTeacherMain_Load(object sender, EventArgs e)
         {
-
+            lblUsername.Text = _username;
         }
     }
 }

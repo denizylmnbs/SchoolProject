@@ -32,22 +32,19 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblStudentEmail = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblGradeAverage = new System.Windows.Forms.Label();
-            this.lblStudentDepartment = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblStudentFullName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -77,13 +74,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblUsername);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.lblStudentEmail);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.lblGradeAverage);
-            this.groupBox1.Controls.Add(this.lblStudentDepartment);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.lblStudentFullName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -91,6 +85,15 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Akademik Üye Bilgileri";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(206, 39);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(43, 21);
+            this.lblUsername.TabIndex = 8;
+            this.lblUsername.Text = "label";
             // 
             // label5
             // 
@@ -101,14 +104,6 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Telefon Numarası:";
             // 
-            // lblStudentEmail
-            // 
-            this.lblStudentEmail.AutoSize = true;
-            this.lblStudentEmail.Location = new System.Drawing.Point(67, 98);
-            this.lblStudentEmail.Name = "lblStudentEmail";
-            this.lblStudentEmail.Size = new System.Drawing.Size(0, 21);
-            this.lblStudentEmail.TabIndex = 6;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -118,22 +113,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Email: ";
             // 
-            // lblGradeAverage
-            // 
-            this.lblGradeAverage.AutoSize = true;
-            this.lblGradeAverage.Location = new System.Drawing.Point(131, 100);
-            this.lblGradeAverage.Name = "lblGradeAverage";
-            this.lblGradeAverage.Size = new System.Drawing.Size(0, 21);
-            this.lblGradeAverage.TabIndex = 4;
-            // 
-            // lblStudentDepartment
-            // 
-            this.lblStudentDepartment.AutoSize = true;
-            this.lblStudentDepartment.Location = new System.Drawing.Point(70, 69);
-            this.lblStudentDepartment.Name = "lblStudentDepartment";
-            this.lblStudentDepartment.Size = new System.Drawing.Size(0, 21);
-            this.lblStudentDepartment.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -142,14 +121,6 @@
             this.label2.Size = new System.Drawing.Size(58, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ünvan:";
-            // 
-            // lblStudentFullName
-            // 
-            this.lblStudentFullName.AutoSize = true;
-            this.lblStudentFullName.Location = new System.Drawing.Point(96, 39);
-            this.lblStudentFullName.Name = "lblStudentFullName";
-            this.lblStudentFullName.Size = new System.Drawing.Size(0, 21);
-            this.lblStudentFullName.TabIndex = 1;
             // 
             // label1
             // 
@@ -193,32 +164,14 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Hızlı Erişim";
             // 
-            // button2
+            // button5
             // 
-            this.button2.Location = new System.Drawing.Point(6, 52);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(224, 35);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Not Girişi";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(6, 93);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 35);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Ödev Atama";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 134);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 35);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Duyuru Yapma";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(6, 216);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(224, 35);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Çıkış";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -229,14 +182,32 @@
             this.button4.Text = "Bilgilerini Güncelle";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button1
             // 
-            this.button5.Location = new System.Drawing.Point(6, 216);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(224, 35);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Çıkış";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(6, 134);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 35);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Duyuru Yapma";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 93);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(227, 35);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Ödev Atama";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 52);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(224, 35);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Not Girişi";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // frmTeacherMain
             // 
@@ -273,12 +244,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblStudentEmail;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblGradeAverage;
-        private System.Windows.Forms.Label lblStudentDepartment;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblStudentFullName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -288,5 +255,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label lblUsername;
     }
 }
