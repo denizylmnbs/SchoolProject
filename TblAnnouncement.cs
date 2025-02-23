@@ -18,7 +18,7 @@ namespace SchoolProject
         public Nullable<bool> ForTeachers { get; set; }
         public Nullable<bool> ForStudents { get; set; }
         public string Course { get; set; }
-        public Nullable<short> Section { get; set; }
+        public string Section { get; set; }
         public string Content { get; set; }
     }
 }
