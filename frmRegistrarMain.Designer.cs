@@ -38,11 +38,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAnnouncements = new System.Windows.Forms.Button();
+            this.btnCourses = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStudents = new System.Windows.Forms.Button();
+            this.btnTeachers = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -119,11 +119,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.btnAnnouncements);
+            this.groupBox2.Controls.Add(this.btnCourses);
             this.groupBox2.Controls.Add(this.btnUpdate);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnStudents);
+            this.groupBox2.Controls.Add(this.btnTeachers);
             this.groupBox2.Location = new System.Drawing.Point(282, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(395, 146);
@@ -140,23 +140,24 @@
             this.button6.Text = "Çıkış Yap";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnAnnouncements
             // 
-            this.button5.Location = new System.Drawing.Point(199, 66);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(187, 32);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Duyuru Paneli";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAnnouncements.Location = new System.Drawing.Point(199, 66);
+            this.btnAnnouncements.Name = "btnAnnouncements";
+            this.btnAnnouncements.Size = new System.Drawing.Size(187, 32);
+            this.btnAnnouncements.TabIndex = 4;
+            this.btnAnnouncements.Text = "Duyuru Paneli";
+            this.btnAnnouncements.UseVisualStyleBackColor = true;
+            this.btnAnnouncements.Click += new System.EventHandler(this.btnAnnouncements_Click);
             // 
-            // button4
+            // btnCourses
             // 
-            this.button4.Location = new System.Drawing.Point(199, 28);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(187, 32);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Ders İşlemleri";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCourses.Location = new System.Drawing.Point(199, 28);
+            this.btnCourses.Name = "btnCourses";
+            this.btnCourses.Size = new System.Drawing.Size(187, 32);
+            this.btnCourses.TabIndex = 3;
+            this.btnCourses.Text = "Ders İşlemleri";
+            this.btnCourses.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
@@ -168,23 +169,23 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // button2
+            // btnStudents
             // 
-            this.button2.Location = new System.Drawing.Point(6, 66);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Öğrenci İşlemleri";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnStudents.Location = new System.Drawing.Point(6, 66);
+            this.btnStudents.Name = "btnStudents";
+            this.btnStudents.Size = new System.Drawing.Size(187, 32);
+            this.btnStudents.TabIndex = 1;
+            this.btnStudents.Text = "Öğrenci İşlemleri";
+            this.btnStudents.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnTeachers
             // 
-            this.button1.Location = new System.Drawing.Point(6, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Akademik Üye İşlemleri";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTeachers.Location = new System.Drawing.Point(6, 28);
+            this.btnTeachers.Name = "btnTeachers";
+            this.btnTeachers.Size = new System.Drawing.Size(187, 32);
+            this.btnTeachers.TabIndex = 0;
+            this.btnTeachers.Text = "Akademik Üye İşlemleri";
+            this.btnTeachers.UseVisualStyleBackColor = true;
             // 
             // frmRegistrarMain
             // 
@@ -218,11 +219,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAnnouncements;
+        private System.Windows.Forms.Button btnCourses;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStudents;
+        private System.Windows.Forms.Button btnTeachers;
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.Label lblPhoneNumber;
         private System.Windows.Forms.Label lblEmail;

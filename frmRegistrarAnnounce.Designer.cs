@@ -32,13 +32,11 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.chckStudents = new System.Windows.Forms.CheckBox();
+            this.chckTeacher = new System.Windows.Forms.CheckBox();
+            this.btnSend = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -65,13 +63,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.chckStudents);
+            this.groupBox1.Controls.Add(this.chckTeacher);
+            this.groupBox1.Controls.Add(this.btnSend);
             this.groupBox1.Controls.Add(this.richTextBox1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(274, 407);
@@ -79,14 +75,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Duyuru Girişi";
             // 
-            // button1
+            // chckStudents
             // 
-            this.button1.Location = new System.Drawing.Point(11, 349);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 35);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Duyuruyu Gönder";
-            this.button1.UseVisualStyleBackColor = true;
+            this.chckStudents.AutoSize = true;
+            this.chckStudents.Location = new System.Drawing.Point(157, 66);
+            this.chckStudents.Name = "chckStudents";
+            this.chckStudents.Size = new System.Drawing.Size(102, 25);
+            this.chckStudents.TabIndex = 8;
+            this.chckStudents.Text = "Öğrenciler";
+            this.chckStudents.UseVisualStyleBackColor = true;
+            // 
+            // chckTeacher
+            // 
+            this.chckTeacher.AutoSize = true;
+            this.chckTeacher.Location = new System.Drawing.Point(11, 66);
+            this.chckTeacher.Name = "chckTeacher";
+            this.chckTeacher.Size = new System.Drawing.Size(118, 25);
+            this.chckTeacher.TabIndex = 7;
+            this.chckTeacher.Text = "Öğretmenler";
+            this.chckTeacher.UseVisualStyleBackColor = true;
+            // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(11, 349);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(248, 35);
+            this.btnSend.TabIndex = 6;
+            this.btnSend.Text = "Duyuruyu Gönder";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // richTextBox1
             // 
@@ -105,40 +122,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Duyuru:";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(89, 82);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(170, 29);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Sınıf:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(89, 47);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 29);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ders:";
-            // 
             // frmRegistrarAnnounce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -153,6 +136,7 @@
             this.Name = "frmRegistrarAnnounce";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Öğrenci İşleri - Duyuru Paneli";
+            this.Load += new System.EventHandler(this.frmRegistrarAnnounce_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -166,12 +150,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox chckStudents;
+        private System.Windows.Forms.CheckBox chckTeacher;
     }
 }

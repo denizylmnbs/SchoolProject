@@ -45,5 +45,11 @@ namespace SchoolProject
             frmRegistrarInformationUpdate fr = new frmRegistrarInformationUpdate(_username);
             fr.ShowDialog();
         }
+
+        private void btnAnnouncements_Click(object sender, EventArgs e)
+        {
+            frmRegistrarAnnounce fr = new frmRegistrarAnnounce(_username);
+            fr.ShowDialog();
+        }
     }
 }
